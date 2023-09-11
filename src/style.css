@@ -6,8 +6,12 @@
 }
 
 body {
-  background: black;
+  background-color: black;
+  margin: 0 auto;
+  display: block;
+  overflow-x: hidden;
 }
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("/images/laika-header.jpeg");
@@ -44,7 +48,8 @@ header h3 {
   font-family: var(--secondary-font);
 }
 
-header a {
+header a,
+main a {
   font-weight: 700px;
   font-size: 14px;
   line-height: 1.5;
@@ -66,48 +71,26 @@ section {
   padding: 70px 0;
 }
 
-.container {
-  max-width: 1300px;
-  margin: 0 auto;
-}
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 10px;
-}
-
-.img-responsive {
-  width: 520px;
-  height: 570px;
-}
-
-.grid-2-columns {
-  grid-template-columns: 1fr 1fr;
-}
-
-.grid-3-columns {
-  grid-template-columns: 1fr 2fr 2fr;
-}
-
 main h2 {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   margin: 0;
-  padding-bottom: 15px;
   letter-spacing: 5px;
   color: white;
   opacity: 0.3;
   text-transform: uppercase;
 }
 
-main h3 {
+main h3,
+main h5 {
   font-weight: 700;
   font-size: 27px;
   line-height: 1.5;
   color: #2e7196;
   margin: 0;
   font-family: var(--header-font);
+  padding-top: 12px;
 }
 
 main p {
@@ -118,6 +101,10 @@ main p {
   color: white;
   opacity: 0.7;
   font-family: var(--primary-font);
+}
+
+.secondary p {
+  font-size: 16px;
 }
 
 footer {
@@ -166,6 +153,63 @@ footer a {
 
 footer a:hover {
   color: white;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 10px;
+}
+
+.img-responsive {
+  width: 520px;
+  height: 570px;
+}
+
+.fav-img {
+  height: 35%;
+  width: 85%;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.secondary {
+  text-align: center;
+}
+.card {
+  border: 2px solid var(--primary-color);
+  padding: 15px 5px;
+}
+
+.fav-films {
+  font-size: 40px;
+  padding-bottom: 17px;
+}
+.btn {
+  padding: 10px 50px;
+}
+.grid-even-3-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 12px;
+}
+
+.laika {
+  font-size: 30px;
+}
+
+.soundcloud {
+  padding-bottom: 15px;
 }
 
 @media (max-width: 960px) {
