@@ -194,6 +194,7 @@ footer a:hover {
 .fav-films {
   font-size: 40px;
   padding-bottom: 17px;
+  text-align: center;
 }
 .btn {
   padding: 10px 50px;
