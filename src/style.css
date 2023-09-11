@@ -212,6 +212,11 @@ footer a:hover {
   padding-bottom: 15px;
 }
 
+.third {
+  background-color: var(--primary-color);
+  padding-left: 120px;
+}
+
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
